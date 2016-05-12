@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MessageRootTableViewCell" rowHeight="111" id="KGk-i7-Jjw" customClass="MessageRootTableViewCell" customModule="iMessage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="110.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOo-va-TBE">
+                        <rect key="frame" x="18" y="13" width="152" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="152" id="deB-Pe-5cO"/>
+                            <constraint firstAttribute="height" constant="21" id="wdk-DV-Mlk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016/3/20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRO-aD-1Vv">
+                        <rect key="frame" x="208" y="13" width="88" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88" id="6eX-sV-Goy"/>
+                            <constraint firstAttribute="height" constant="21" id="trR-D2-S0u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="你好，今天要一起去吃饭么？然后我们在看个电影怎么样？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7x-bZ-gJQ">
+                        <rect key="frame" x="18" y="50" width="278" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="hxQ-6n-xWp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UOo-va-TBE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="NaX-XY-S2j"/>
+                    <constraint firstItem="G7x-bZ-gJQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="P5Y-AG-K2d"/>
+                    <constraint firstItem="G7x-bZ-gJQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="43" id="ax3-SQ-kJf"/>
+                    <constraint firstItem="tRO-aD-1Vv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="e03-j6-LQM"/>
+                    <constraint firstItem="UOo-va-TBE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="tW1-KZ-BUz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="G7x-bZ-gJQ" secondAttribute="trailing" constant="24" id="bZX-cn-l4m"/>
+                <constraint firstAttribute="trailing" secondItem="tRO-aD-1Vv" secondAttribute="trailing" constant="24" id="qx8-EU-KCu"/>
+            </constraints>
+            <connections>
+                <outlet property="contentLabel" destination="G7x-bZ-gJQ" id="X17-ya-9Z1"/>
+                <outlet property="dateLabel" destination="tRO-aD-1Vv" id="YSd-Lu-jN4"/>
+                <outlet property="titleTestLabel" destination="UOo-va-TBE" id="tgm-AD-4Ak"/>
+            </connections>
+            <point key="canvasLocation" x="176" y="238.5"/>
+        </tableViewCell>
+    </objects>
+</document>
